@@ -5,6 +5,7 @@ default: &default
   source_entry_path: packs
   public_output_path: packs
   cache_path: tmp/cache/webpacker
+  check_yarn_integrity: false
 
   # Additional paths webpack should lookup modules
   # ['app/assets', 'engine/foo/app/assets']
@@ -14,6 +15,7 @@ default: &default
   cache_manifest: false
 
   extensions:
+    - .vue
     - .js
     - .sass
     - .scss
@@ -31,13 +33,16 @@ development:
   <<: *default
   compile: true
 
+  # Verifies that versions and hashed value of the package contents in the project's package.json
+  check_yarn_integrity: true
+
   # Reference: https://webpack.js.org/configuration/dev-server/
   dev_server:
-    https: true
-    host: localhost
+    https: false
+    host: webpacker
     port: 3035
     public: localhost:3035
-    hmr: false
+    hmr: true
     # Inline should be set to true if using HMR
     inline: true
     overlay: true
