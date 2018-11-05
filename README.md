@@ -1,4 +1,6 @@
 # README
+This is a starting package to initiate a ruby on rails project with the use of webpacker to separate frontend from rails, utilizing docker containers. It is required to familiarize with docker before using it.`
+
 
 ## Credit
 * jetthoughts for creating an updated project just in time, and well documentation on the readme. https://github.com/jetthoughts/vuejs-rails-5-starterkit
