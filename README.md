@@ -1,5 +1,7 @@
 # README
-This is a starting package to initiate a ruby on rails project with the use of webpacker to separate frontend from rails, utilizing docker containers. It is required to familiarize with docker and its concept before using it.
+This is a starting package to initiate a ruby on rails project with the use of webpacker to separate frontend, utilizing docker containers. 
+
+It is required to familiarize with docker commands and its concept before using it.
 
 
 ## Credit
