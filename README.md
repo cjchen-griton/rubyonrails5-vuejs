@@ -37,6 +37,10 @@ docker-compose build
 ```
 once build, run container
 ```bash
+# install package dependencies
+docker-compose yarn install
+# create database
+docker-compose run web rails db:create db:migrate
 #run docker container
 docker-compose up
 ```
